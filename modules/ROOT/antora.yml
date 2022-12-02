@@ -1,0 +1,47 @@
+# Name will be mostly visible in the URL. Treat it as an indentifier.
+# Tip: If you want to use the local preview scripts that come with this
+# repository, please change this value in the site.yml file as well. (under
+# site/start_page)
+name: spring-framework
+
+# Title will be visible on the page.
+title: Spring Framework
+
+# If you don't plan to have multiple versions of the docs (for example, to
+# document multiple versions of some software), you can ignore this field.
+# Otherwise, change "master" to a specific version.
+version: master
+
+# We encourage you to name the index page as "index.adoc". If you absolutely
+# have to use a different name, please reflect it here. You can ignore this
+# field otherwise.
+start_page: ROOT:index.adoc
+
+asciidoc:
+  attributes:
+    spring-version: 6.0.2
+    chomp:                         "default headers packages"
+    docs-site:                     "https://docs.spring.io"
+    # Spring Framework
+    docs-spring-framework:         "{docs-site}/spring-framework/docs/{spring-version}"
+    api-spring-framework:          "{docs-spring-framework}/javadoc-api/org/springframework"
+    docs-java:                     "{docdir}/../../main/java/org/springframework/docs"
+    docs-kotlin:                   "{docdir}/../../main/kotlin/org/springframework/docs"
+    docs-resources:                "{docdir}/../../main/resources"
+    spring-framework-main-code:    "https://github.com/spring-projects/spring-framework/tree/main"
+    # Spring portfolio Links
+    docs-spring-boot:              "{docs-site}/spring-boot/docs/current/reference"
+    docs-spring-gemfire:           "{docs-site}/spring-gemfire/docs/current/reference"
+    docs-spring-security:          "{docs-site}/spring-security/reference"
+    # Third-party Links
+    docs-graalvm:                  "https://www.graalvm.org/22.3/reference-manual"
+    gh-rsocket:                    "https://github.com/rsocket"
+    gh-rsocket-extensions:         "{gh-rsocket}/rsocket/blob/master/Extensions"
+    gh-rsocket-java:               "{gh-rsocket}/rsocket-java"
+
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
+
+nav:
+- modules/ROOT/nav.adoc
