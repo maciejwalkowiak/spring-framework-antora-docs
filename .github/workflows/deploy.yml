@@ -19,3 +19,5 @@ jobs:
       - name: "Build"
         id: build
         run: bash build.sh
+      - name: "Tree"
+        run: "tree build"
