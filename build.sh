@@ -9,7 +9,7 @@ unzip -q v6.0.2
 # create work dir
 mkdir work
 
-cp _redirects work/
+cp _redirects work/site/
 
 # antora needs to work within a git repository
 
