@@ -1,0 +1,11 @@
+<div class="toolbar" role="navigation">
+{{> nav-toggle}}
+  {{#with site.homeUrl}}
+  <a href="{{{relativize this}}}" class="home-link{{#if @root.page.home}} is-current{{/if}}"></a>
+  {{/with}}
+{{> breadcrumbs}}
+{{!-- <div class="search">
+  <input id="search-input" type="text" placeholder="Search docs"{{#if page.home}} autofocus{{/if}}>
+</div> --}}
+{{> page-versions}}
+</div>
