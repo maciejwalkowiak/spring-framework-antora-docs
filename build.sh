@@ -5,12 +5,13 @@ mkdir work
 
 # antora needs to work within a git repository
 
+cd work
+git init .
+
 # make netlify happy
 git config user.email "you@example.com"
 git config user.name "Your Name"
 
-cd work
-git init .
 touch .gitignore
 git add .gitignore
 git commit -m 'initialize repository'
