@@ -33,8 +33,6 @@ echo "Copying spring framework pages"
 # copy spring framework pages
 cp -r spring-framework-6.0.2/framework-docs/src/docs/asciidoc/ work/modules/ROOT/pages/
 
-tree work
-
 echo "Relocating images"
 
 # relocate images to match antora defaults
@@ -46,5 +44,11 @@ echo "Copying antora config file"
 # copy antora config file
 cp antora.yml work/
 
+tree work
+
+echo "Running Antora"
+
 # run antora
 npx antora --extension @antora/lunr-extension antora-playbook.yml
+
+echo "Running Antora finished"
