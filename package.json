@@ -1,4 +1,7 @@
 {
+  "scripts":{
+    "antora": "antora --extension @antora/lunr-extension antora-playbook.yml"
+  },
   "devDependencies": {
     "@antora/cli": "3.1.2",
     "@antora/site-generator": "3.1.2"

@@ -49,6 +49,6 @@ tree work
 echo "Running Antora"
 
 # run antora
-npx antora --extension @antora/lunr-extension antora-playbook.yml
+npm run antora
 
 echo "Running Antora finished"
