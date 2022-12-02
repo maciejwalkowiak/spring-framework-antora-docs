@@ -4,6 +4,11 @@ git clone --depth 1 --branch v6.0.2 https://github.com/spring-projects/spring-fr
 mkdir work
 
 # antora needs to work within a git repository
+
+# make netlify happy
+git config user.email "you@example.com"
+git config user.name "Your Name"
+
 cd work
 git init .
 touch .gitignore
