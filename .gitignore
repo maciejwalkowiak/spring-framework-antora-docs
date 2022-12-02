@@ -2,3 +2,4 @@ spring-framework
 node_modules
 build
 work
+.DS_Store
