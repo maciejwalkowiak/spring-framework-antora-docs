@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: "Install Lunr extension"
-        run: "npm i -g @antora/lunr-extension"
+        run: "npm install"
       - name: "Build"
         id: build
         run: bash build.sh
