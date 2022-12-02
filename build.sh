@@ -9,8 +9,6 @@ unzip -q v6.0.2
 # create work dir
 mkdir work
 
-cp _redirects work/site/
-
 # antora needs to work within a git repository
 
 cd work
@@ -54,3 +52,5 @@ echo "Running Antora"
 npm run antora
 
 echo "Running Antora finished"
+# move redirects
+cp _redirects work/site/
