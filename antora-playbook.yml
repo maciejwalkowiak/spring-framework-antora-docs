@@ -2,7 +2,7 @@ site:
   title: Spring Framework
 content:
   sources: 
-  - url: ./
+  - url: ./work
     branches: [main]
 ui: 
   bundle:
