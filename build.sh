@@ -1,5 +1,5 @@
 wget https://github.com/spring-projects/spring-framework/archive/refs/tags/v6.0.2.zip
-unzip v6.0.2
+unzip -q v6.0.2
 
 # create work dir
 mkdir work
