@@ -1,10 +1,10 @@
 echo "Downloading Spring Framework project"
 
-wget -q https://github.com/spring-projects/spring-framework/archive/refs/tags/v6.0.2.zip
+wget -q https://github.com/spring-projects/spring-framework/archive/refs/tags/v6.0.2.zip -O sf.zip
 
 echo "Unzipping"
 
-unzip -q v6.0.2
+unzip -q sf.zip
 
 # create work dir
 mkdir work
@@ -53,4 +53,4 @@ npm run antora
 
 echo "Running Antora finished"
 # move redirects
-cp _redirects work/site/
+cp _redirects build/site/_redirects
