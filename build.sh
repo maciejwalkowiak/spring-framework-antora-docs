@@ -1,4 +1,4 @@
-wget https://github.com/spring-projects/spring-framework/archive/refs/tags/v6.0.2.zip
+wget -q https://github.com/spring-projects/spring-framework/archive/refs/tags/v6.0.2.zip
 unzip -q v6.0.2
 
 # create work dir
@@ -23,6 +23,8 @@ cp -r modules work/
 
 # copy spring framework pages
 cp -r spring-framework-6.0.2/framework-docs/src/docs/asciidoc/ work/modules/ROOT/pages/
+
+tree work
 
 # relocate images to match antora defaults
 mv work/modules/ROOT/pages/images/* work/modules/ROOT/images/images/
