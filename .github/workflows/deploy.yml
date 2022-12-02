@@ -7,13 +7,15 @@ name: Deploy to Nelify
 
 jobs:
   build:
-    name: Create Release
+    name: Deploy to Netlify
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - name: "Install Lunr extension"
+        run: "npm i -g @antora/lunr-extension"
       - name: "Build"
         id: build
         run: bash build.sh
