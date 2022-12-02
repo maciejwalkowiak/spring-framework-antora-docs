@@ -1,4 +1,5 @@
-git clone --depth 1 --branch v6.0.2 https://github.com/spring-projects/spring-framework
+wget https://github.com/spring-projects/spring-framework/archive/refs/tags/v6.0.2.zip
+unzip v6.0.2
 
 # create work dir
 mkdir work
@@ -21,7 +22,7 @@ cd ..
 cp -r modules work/
 
 # copy spring framework pages
-cp -r spring-framework/framework-docs/src/docs/asciidoc/ work/modules/ROOT/pages/
+cp -r spring-framework-6.0.2/framework-docs/src/docs/asciidoc/ work/modules/ROOT/pages/
 
 # relocate images to match antora defaults
 mv work/modules/ROOT/pages/images/* work/modules/ROOT/images/images/
