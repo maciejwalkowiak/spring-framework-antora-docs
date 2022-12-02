@@ -3,7 +3,7 @@ site:
 content:
   sources: 
   - url: ./work
-    branches: [main]
+    branches: HEAD
 ui: 
   bundle:
     url: https://github.com/spring-io/antora-ui-spring/releases/download/latest/ui-bundle.zip
