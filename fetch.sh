@@ -3,4 +3,4 @@ mkdir -p modules/ROOT/
 mkdir -p modules/ROOT/pages
 mkdir -p modules/ROOT/images
 cp -r spring-framework/framework-docs/src/docs/asciidoc/ modules/ROOT/pages/
-mv modules/ROOT/pages/images modules/ROOT/images/
+mv modules/ROOT/pages/images/* modules/ROOT/images/images/

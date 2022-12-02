@@ -2,9 +2,8 @@ site:
   title: Spring Framework
 content:
   sources: 
-  - url: ./spring-framework/
+  - url: ./
     branches: [main]
-    start_path: framework-docs/src/docs/asciidoc
 ui: 
   bundle:
     url: https://github.com/spring-io/antora-ui-spring/releases/download/latest/ui-bundle.zip
