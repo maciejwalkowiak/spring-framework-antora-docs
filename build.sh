@@ -27,6 +27,7 @@ cp -r spring-framework-6.0.2/framework-docs/src/docs/asciidoc/ work/modules/ROOT
 tree work
 
 # relocate images to match antora defaults
+mkdir -p work/modules/ROOT/images/images/
 mv work/modules/ROOT/pages/images/* work/modules/ROOT/images/images/
 
 # copy antora config file
